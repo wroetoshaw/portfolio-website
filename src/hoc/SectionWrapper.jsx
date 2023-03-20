@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../Style"; 
+import { styles } from "../Style";
 import { staggerContainer } from "../utils/motion";
 
 const SectionWrapper = (Component, idName) =>

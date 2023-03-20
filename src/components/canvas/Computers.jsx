@@ -1,8 +1,50 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import Loader from "../Loader";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";const Computers = ({ isMobile }) => {
+import CanvasLoader from "../Loader";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+
+
+function getScrollPercent() {
+  var h = document.documentElement,
+    b = document.body,
+    st = "scrollTop",
+    sh = "scrollHeight";
+
+  var scrollPercent = Math.round(
+    ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
+  );
+  //get the percentage of scroll
+
+  return isNaN(scrollPercent) ? "" : scrollPercent;
+}
+
+const Computers = ({ isMobile }) => {
+  
+  
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
+  const [scrollPercentage, setScrollPercentage] = useState("");
+
+  useEffect(() => {
+    function handleScroll() {
+      const newScrollPercentage = getScrollPercent();
+
+      // calculate and set the new scroll percentage
+      setScrollPercentage(newScrollPercentage);
+    }
+
+    window.addEventListener("scroll", handleScroll, true);
+
+    // clean up event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll, true);
+    }
+  }, []);
+
+  console.log({scrollPercentage})
+
+
+
 
   return (
     <mesh>
@@ -58,7 +100,7 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
