@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { BrowserRouter } from'react-router-dom';
 
-import {About, Contact, Experience , Feedbacks ,  Hero, Navbar, Tech, Works} from './components';
+import {About, Contact, Experience , StarsCanvas ,  Hero, Navbar, Tech, Works} from './components';
 
 const App = () => {
 
@@ -12,14 +12,17 @@ const App = () => {
           <Navbar/>
           <Hero />
         </div>
+        
+        <div className = 'relative z-0'> 
         <About />
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
-        <div className = 'relative z-0'>
-          <Contact/>
+        <Contact/>
+        <StarsCanvas/>
         </div>
+        
+          
       </div>
     </BrowserRouter>
     
