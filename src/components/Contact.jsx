@@ -10,11 +10,6 @@ import emailjs from '@emailjs/browser'
 import { slideIn } from '../utils/motion'
 
 
-// template_30pa8yt
-// service_c5ln19b
-// 2sawkGAcGyWDNR7JWV1gv
-// ROtrtVtF1bGuMGXiB
-
 const Contact = () => {
   const formRef = useRef();
 
