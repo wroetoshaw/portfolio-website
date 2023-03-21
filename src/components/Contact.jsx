@@ -10,9 +10,13 @@ import emailjs from '@emailjs/browser'
 import { slideIn } from '../utils/motion'
 
 
+// template_30pa8yt
+// service_c5ln19b
+// 2sawkGAcGyWDNR7JWV1gv
+// ROtrtVtF1bGuMGXiB
 
 const Contact = () => {
-  // const formRef = useRef();
+  const formRef = useRef();
 
   const [form,setForm] = useState({
     name: "",
@@ -32,6 +36,37 @@ const Contact = () => {
     })
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    isLoading(true);
+    
+    emailjs.send('service_c5ln19b',
+    'template_30pa8yt',
+    {
+      from_name : form.name,
+      to_name : 'Karthik',
+      from_email : form.email,
+      to_email : 'karthikgoud3720@gmail.com',
+      message : form.message,
+    },
+    'ROtrtVtF1bGuMGXiB'    
+    ).then(() => {
+      isLoading(false);
+      alert('Thank you, I will get back as soon as possible.');
+      setForm({
+        name: '',
+        email : '',
+        message : '',
+      })
+
+    }, (error) => {
+      isLoading(false);
+      console.log(error);
+      alert('something went wrong');
+    })
+
+  }
+
   return (
     <div
       className='xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'
@@ -46,7 +81,8 @@ const Contact = () => {
         <h3 className={styles.heroHeadText} > Contact </h3>
 
         <form
-        // ref = {formRef}
+        ref = {formRef}
+        onSubmit = {handleSubmit}
         className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
