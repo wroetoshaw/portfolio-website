@@ -41,7 +41,6 @@ const Computers = ({ isMobile }) => {
     }
   }, []);
 
-  console.log({scrollPercentage})
 
 
 
