@@ -7,6 +7,19 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import crwn from "./crwn.png";
+import smgs from "./smgs.png";
+import smart from "./smart.png";
+import build from "./build.png";
+
+import cpp from "./tech/c++.png";
+import python from "./tech/python.png";
+import solidity from "./tech/solidity.png";
+import metamask from "./tech/metamask.png";
+import remix from "./tech/remix.png";
+import java from "./tech/java.png";
+import tensorflow from "./tech/tensorflow.png";
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -29,6 +42,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import igem from "./igem.png";
+import iet from "./iet.png";
+import siam from "./siam.png";
+
 
 export {
   logo,
@@ -59,4 +77,17 @@ export {
   carrent,
   jobit,
   tripguide,
+  cpp,
+  python,
+solidity,
+metamask,
+remix, 
+java ,
+tensorflow,
+crwn, 
+smgs ,
+smart,
+build,
+siam,
+igem,iet,
 };
