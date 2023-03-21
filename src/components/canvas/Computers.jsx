@@ -1,49 +1,11 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import CanvasLoader from "../Loader";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-
-function getScrollPercent() {
-  var h = document.documentElement,
-    b = document.body,
-    st = "scrollTop",
-    sh = "scrollHeight";
-
-  var scrollPercent = Math.round(
-    ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
-  );
-  //get the percentage of scroll
-
-  return isNaN(scrollPercent) ? "" : scrollPercent;
-}
+import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  
-  
   const computer = useGLTF("./desktop_pc/scene.gltf");
-
-  const [scrollPercentage, setScrollPercentage] = useState("");
-
-  useEffect(() => {
-    function handleScroll() {
-      const newScrollPercentage = getScrollPercent();
-
-      // calculate and set the new scroll percentage
-      setScrollPercentage(newScrollPercentage);
-    }
-
-    window.addEventListener("scroll", handleScroll, true);
-
-    // clean up event listener when component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll, true);
-    }
-  }, []);
-
-
-
-
 
   return (
     <mesh>
