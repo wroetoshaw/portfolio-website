@@ -1,6 +1,6 @@
 <img src="./src/assests/logo.png" alt="Logo of the project" align="right">
 
-# React-Portfolio-website &middot; [![Build Status](https://portfolio-wroetoshaw.netlify.app/)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# React-Portfolio-website &middot; [![Build Status](https://img.shields.io/netlify/466b2527-7f58-47bf-8d92-fb0d6a11b8c7)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
 ## *Description*
 The portfolio website is a responsive and dynamic website built using React and various popular libraries such as Vite, Email.js, React-Three-Fiber, Framer Motion, and Tailwind CSS. This website is designed to showcase the portfolio of a creative professional or an artist in an impressive manner. It has a minimalistic and clean design, with smooth animations and intuitive UI that creates a seamless user experience.
