@@ -1,4 +1,4 @@
-<img src="./src/assets/1.png" alt="Logo of the project" align="right" style = {"width: 100px; height: 50px;"}>
+<img src="./src/assets/1.png" alt="Logo of the project" align="right">
 
 # React-Portfolio-website &middot; [![Netlify Status](https://api.netlify.com/api/v1/badges/466b2527-7f58-47bf-8d92-fb0d6a11b8c7/deploy-status)](https://app.netlify.com/sites/portfolio-wroetoshaw/deploys) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
