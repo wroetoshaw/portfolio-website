@@ -23,8 +23,8 @@ npm install -legacy--peer-deps
 ```
 to install all the necessary dependencies and peer dependencies required for the project to run smoothly. The reason why we are using -legacy--peer-deps in the npm install command is that some of the libraries used in this project have peer dependencies that are not compatible with the latest version of npm. Using this flag ensures that the peer dependencies are installed correctly, and the project runs smoothly without any errors.
 
-## Built With
+## *Built With*
 Vite, Email.js, React-Three-Fiber, Framer Motion, and Tailwind CSS
 
-## email/contact
+## *Email/contact*
 Make sure you update conatact.jsx with your emailjs public key credential, email and tempalate ids.
