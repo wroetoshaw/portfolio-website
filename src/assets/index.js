@@ -47,8 +47,19 @@ import igem from "./igem.png";
 import iet from "./iet.png";
 import siam from "./siam.png";
 
+import blockbeatz from "./block.png";
+import cbdc from "./cbdc.png";
+import wms from "./wms.png";
+import blockchainIcon from "./blockchain.png";
+import aiIcon from "./aiIcon.png";
+
 
 export {
+  cbdc,
+  wms,
+  blockchainIcon,
+  aiIcon,
+  blockbeatz,
   logo,
   backend,
   creator,
@@ -90,4 +101,5 @@ smart,
 build,
 siam,
 igem,iet,
+
 };
